@@ -74,6 +74,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .getBuilder("facebook")
                 .clientId(clientId)
                 .clientSecret(clientSecret)
+                .scope(
+                        "public_profile",
+                        "email",
+                        "user_birthday",
+                        "user_gender"
+                )
+                .userInfoUri("https://graph.facebook.com/me?fields=id,name,email,picture,gender,birthday")
                 .build();
     }
 
