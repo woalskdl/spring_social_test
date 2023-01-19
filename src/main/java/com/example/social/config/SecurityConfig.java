@@ -77,4 +77,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .build();
     }
 
+    // 네이버 카카오 등 추가 인증 정보를 설정할 수 있다.
+
 }
