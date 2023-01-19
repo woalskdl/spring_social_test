@@ -1,6 +1,16 @@
+server:
+  port: 9001
 
 spring:
   application:
-    name: "social"
-server:
-  port: 9001
+    name: "spring_social_test"
+  security:
+    oauth2:
+      client:
+        registration:
+          facebook:
+            client-id : "1120862325271228"
+            client-secret : "da0c5732012b747d35f0544809df7547"
+          google:
+            client-id : "861622032465-rl485dg9od5mf4enghp9n9c9v12bivqj.apps.googleusercontent.com"
+            client-secret : "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"
